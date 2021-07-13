@@ -1,6 +1,7 @@
 import { TaskService } from './../../services/task.service';
 import { Task } from './../../Task';
 import { Component, OnInit } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-tasks',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tasks.component.css']
 })
 export class TasksComponent implements OnInit {
+
+  faCoffee = faCoffee;
+
 
   tasks: Task[] = [];
   constructor(private taskService: TaskService) { }
