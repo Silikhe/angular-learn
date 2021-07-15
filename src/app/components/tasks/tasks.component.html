@@ -1,5 +1,3 @@
-<h3 *ngFor="let task of tasks">{{task.text}}</h3>
-<h3 *ngFor="let me of tasks">{{me.day}}</h3>
-<h3 *ngFor="let task of tasks">{{task.reminder}}</h3>
-
-<app-evans></app-evans>
+<app-tasks-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)">
+    
+</app-tasks-item>
